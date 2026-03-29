@@ -5,6 +5,8 @@ elf2x68k環境向けのPCM8PPドライバのファンクションコールラッ
 
 PCM8PPのファンクションコールに準じた以下の関数が利用可能です。
 ```
+#include <pcm8pp.h>
+
 int32_t pcm8pp_play(int16_t channel, uint32_t mode, size_t size, uint32_t freq, void* addr);
 int32_t pcm8pp_play_array_chain(int16_t channel, uint32_t mode, size_t count, uint32_t freq, void* addr);
 int32_t pcm8pp_play_linked_array_chain(int16_t channel, uint32_t mode, size_t size, uint32_t freq, void* addr);
