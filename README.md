@@ -55,7 +55,8 @@ my_app/
 
 ヘッダー検索パスとライブラリ検索パスをMakefile内で
 ```
--I../libs/libj/include
--L../libs/libj/lib
+-I../libs/libpcm8pp/include
+-L../libs/libpcm8pp/lib
 ```
 のように指定し、`-lpcm8pp` でリンクできます。
+内部的にDOS/IOCSコールを使っているため、`-ldos -liocs`もあわせて指定してください。
