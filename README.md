@@ -59,4 +59,3 @@ my_app/
 -L../libs/libpcm8pp/lib
 ```
 のように指定し、`-lpcm8pp` でリンクできます。
-内部的にDOS/IOCSコールを使っているため、`-ldos -liocs`もあわせて指定してください。
